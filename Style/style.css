@@ -184,14 +184,13 @@ footer figure img{
     top:50%;
     transform: translateY(-50%);
     position: relative;
-    margin-left: 20px;
+    left: -20px;
+    transition: .8s ease all;
   }
 
-  div#hamburguer-menu label.icon-menu:hover{ 
-    color: var(--secundary-bg-clr);
-    transition: 1000ms ease all;
+  div#hamburguer-menu label.icon-menu:active{ 
+    transform:translateY(20px) rotate(360deg);    
   }
-
 
   #btn-menu{
     display: none;
@@ -291,6 +290,9 @@ nav#reduced-menu ul li:hover{
     top: 50px;
     font-size: var(--fs-vs);
     font-weight: var(--fw-m);
+    width: 160px;
+    height: 40px;
+    word-wrap: break-word;
 }
 
 .card .bottom .price{
@@ -311,7 +313,7 @@ nav#reduced-menu ul li:hover{
 .beers{
     overflow: hidden;
     overflow-x: auto;
-    white-space: nowrap;
+   /* white-space: nowrap;*/ /*If I set this property it won't work word-wrap: break-word;*/
     width: 95%;
     height: 258px;
     margin-left: 20px;
