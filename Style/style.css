@@ -366,14 +366,14 @@ nav#reduced-menu ul li:hover{
         display:none;
       }
       .card{
-        width: 140px;        
+        width: 135px;        
       }
 
    div.title > p{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 140px;
+        width: 135px;
       } 
 
   }
